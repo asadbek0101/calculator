@@ -1,7 +1,17 @@
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+}
+
 .calculator{
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
     margin-top: 100px;
     display: flex;
@@ -50,10 +60,74 @@
     border-radius: 4px;
 }
 
-@media only screen and (max-width: 300px) {
-    .calculator{
-    }
+@media only screen and (max-width: 768px) {
     .cal-button-group button{
         width: 80px;
+        height: 80px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container{
+        padding: 20px;
+    }
+    .calculator{
+        padding: 30px;
+    }
+    .cal-button-group button{
+        width: 68px;
+        height: 68px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .calculator{
+        padding: 16px;
+    }
+    .cal-button-group button{
+        width: 64px;
+        height: 64px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .calculator{
+        padding: 16px;
+    }
+    .cal-button-group button{
+        width: 58px;
+        height: 58px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .calculator{
+        padding: 16px;
+    }
+    .cal-button-group button{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .container{
+        padding: 10px;
+    }
+    .calculator{
+        margin: 0;
+        margin-top: 100px;
+        padding: 20px;
+    }
+    .cal-button-group button{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .cal-button-group button{
+        width: 40px;
+        height: 40px;
     }
 }
