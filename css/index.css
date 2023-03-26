@@ -61,6 +61,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .calculator{
+        margin-top: 50px;
+    }
     .cal-button-group button{
         width: 80px;
         height: 80px;
@@ -93,7 +96,6 @@
 @media only screen and (max-width: 390px) {
     .calculator{
         padding: 16px;
-        margin-top: 60px;
     }
     .cal-button-group button{
         width: 58px;
