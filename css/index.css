@@ -1,6 +1,7 @@
 
 .calculator{
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     margin: 0 auto;
     margin-top: 100px;
     display: flex;
@@ -24,6 +25,7 @@
     font-size: 30px;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 .cal-button-group{
@@ -35,8 +37,8 @@
 }
 
 .cal-button-group button{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,4 +48,12 @@
     font-weight: bold;
     border: none;
     border-radius: 4px;
+}
+
+@media only screen and (max-width: 300px) {
+    .calculator{
+    }
+    .cal-button-group button{
+        width: 80px;
+    }
 }
